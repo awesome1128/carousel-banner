@@ -1,0 +1,52 @@
+.carousel-cell {
+  background: #8C8;
+  counter-increment: carousel-cell;
+  color: white;
+}
+
+.carousel-main .carousel-cell {
+  width: 100%;
+  height: 360px;
+  font-size: 5rem;
+}
+
+.carousel-nav {
+  width: 300px;
+  transform: rotate(90deg) translate(30px, -100%);
+  transform-origin: left top;
+}
+
+.carousel-nav .carousel-cell {
+  transform: rotate(-90deg);
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+
+  /* selected cell */
+}
+
+.carousel-nav .is-nav-selected {
+  background: #ED2;
+}
+
+.flickity-prev-next-button {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+}
+
+.flickity-prev-next-button .previous {
+  left: -40px;
+}
+
+.flickity-prev-next-button .next {
+  right: -40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-nav {
+    transform: rotate(90deg) translate(30px, -50%);
+  }
+}
